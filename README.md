@@ -11,6 +11,21 @@ This code creates:
 - Create a NIC (Network Card) in the Subnet
 - Create the Virtual Machine
 
+## How to Get Latest Qualys Image version
+
+Open Azure Cloud Shell and type:
+
+```
+$location = "North Europe"
+$publisher = "qualysguard"
+$offer = "qualys-virtual-scanner"
+Get-AzVMImageSku -Location $location -PublisherName $publisher -Offer $offer | Select Skus
+
+$sku = "qvsa"
+Get-AzVMImage -Location $location -PublisherName $publisher -Offer $offer -Skus $sku
+$Version": "2.7.3102"
+```
+
 ## Accepting Marketplace Terms
 
 Get the URN of the MarketPlace license:
