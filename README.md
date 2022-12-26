@@ -1,7 +1,9 @@
 # Deploying Qualys Virtual Scanner Appliance in Azure using Terraform
 [![Terraform](https://img.shields.io/badge/terraform-v1.3+-blue.svg)](https://www.terraform.io/downloads.html)
 
-This code creates:
+Blog --> https://gmusumeci.medium.com/deploying-qualys-appliance-in-azure-using-terraform-c7f028cb2b43
+
+This code:
 
 - Define the Azure Provider
 - Create a Resource Group
