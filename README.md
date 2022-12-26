@@ -17,13 +17,15 @@ Get the URN of the MarketPlace license:
 
 ```
 az vm image list --all --publisher 'qualysguard' --offer 'qualys-virtual-scanner' --sku 'qvsa' --query '[0].urn' 
+
 "qualysguard:qualys-virtual-scanner:qvsa:2.7.2906"
-'''
+```
 
 then accept the terms of the license:
 
 ```
 az vm image terms accept --urn 'qualysguard:qualys-virtual-scanner:qvsa:2.7.2906'
+
 {
   "accepted": true,
   "id": "/subscriptions/xxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/providers/Microsoft.MarketplaceOrdering/offerTypes/Microsoft.MarketplaceOrdering/offertypes/publishers/qualysguard/offers/qualys-virtual-scanner/plans/qvsa/agreements/current",
