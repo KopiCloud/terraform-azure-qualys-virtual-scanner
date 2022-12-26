@@ -11,7 +11,7 @@ This code creates:
 - Create a NIC (Network Card) in the Subnet
 - Create the Virtual Machine
 
-## How to Get Latest Qualys Image version
+## How to Get the Latest Qualys Image version
 
 Open Azure Cloud Shell and type:
 
